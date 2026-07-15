@@ -53,13 +53,13 @@ git version 2.50.0
 Configure your username:
 
 ```bash
-git config --global user.name "Mesbah"
+git config --global user.name "yourname"
 ```
 
 Configure your email:
 
 ```bash
-git config --global user.email "monline1122@gmail.com"
+git config --global user.email "youremail@gmail.com"
 ```
 
 Check configuration:
