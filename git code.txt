@@ -1,0 +1,102 @@
+Git and GitHub
+
+
+
+install git
+open git bash
+git --version
+git init
+git clone
+git add commit push
+
+git status             [Working Directory]
+git config --global user.name "Mesbah"
+git config --global user.email "monline1122@gmail.com"
+
+git add index.html   [Staging Area]
+or 
+git add.
+
+git commit -m "initial website ready" [Local Repository]
+git log
+git log --online
+
+git restore --stage index.html
+
+.gitignore files to create and .env type inside it. it will ignore the .env files.
+
+.gitkeep
+
+git branch branchname
+git switch branchname
+
+git branch
+git switch master  [merge]
+git merge branchname
+Enter ESC : wq  [git uses Vim as its default editor. Press ESc to enter Normal mode, then type :wq to save your changes and quit]
+git log --online
+git status
+git branch -d branchname   [delete a branch]
+git switch -c ui      [create a new branch named ui by this command]
+if conflicts arises
+modify the file manually
+then git add.
+then git commit
+then git status
+git log --online
+git stash  [temporarily stash or store changes]
+git stash list
+git status
+now do the emergency changes
+then git status
+git add.
+git commit
+git log --online
+git stash pop   [get back all the changes]
+git status
+git stash list
+git stash apply [to keep the changes in stash and get the changes in working directory]
+
+annotated tag and lightweight tag. when you want to do mark a commit
+git tag
+git tag -a v1.0 -m "My Release1"
+git tag
+after changes anything
+git tag v1.1 [lightweight tag]
+git log --online -5 [to see the last five commit]
+
+
+touch this.md
+git add.
+git commit -m "create a md file"
+
+Rebase
+git switch ui
+git rebase master [do it in branch]
+git log
+now do the merge from master
+git switch master
+git merge ui
+it will avoid extra merge commit
+
+Remotely host on GitHub
+git clone [past the GitHub repository link]
+log in to bit bash
+now generate ssh key from setting option at GitHub
+touch hello.md
+git add.
+git commit -m "md files added"
+git push origin main
+git remote -v
+git branch -m main
+git config --global init.defaultBranch main
+git pull
+
+
+
+
+
+
+
+
+
